@@ -1,5 +1,23 @@
  var client_id = "abe527c9c9ce47dcb42b58e0713be4fa";
-    var redirect_uri = "https://vault-lac.vercel.app/";
+ var redirect_uri = "https://vault-lac.vercel.app/";
+
+ let login = document.getElementById("login");
+
+  login.addEventListener("click", function () {
+    console.log("login?");
+     window.location.href = url;
+  });
+
+function loginBtn() {
+      console.log("login");
+
+      // let stateKey;
+
+      // console.log(localStorage.setItem(stateKey, state));
+      // console.log(url);
+      window.location.href = url;
+    }
+
 
     function generateRandomString(length) {
       let result = "";
@@ -28,12 +46,4 @@
     url += "&redirect_uri=" + encodeURIComponent(redirect_uri);
     url += "&state=" + encodeURIComponent(state);
     
-    function loginBtn() {
-      console.log("login");
-
-      // let stateKey;
-
-      // console.log(localStorage.setItem(stateKey, state));
-      // console.log(url);
-      window.location.href = url;
-    }
+    
