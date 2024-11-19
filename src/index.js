@@ -14,9 +14,9 @@ url += "&scope=" + encodeURIComponent(scope);
 url += "&redirect_uri=" + encodeURIComponent(redirect_uri);
 url += "&state=" + encodeURIComponent(state);
 
-let login = document.getElementById("login");
+// let login = document.getElementById("login");
 
-login.addEventListener("click", function () {
-  console.log("login?");
-  window.location.href = url;
-});
+// login.addEventListener("click", function () {
+//   console.log("login?");
+//   window.location.href = url;
+// });
